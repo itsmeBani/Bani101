@@ -13,6 +13,8 @@
 html{
     --tw-bg-opacity: 2;
     background-color: hsl(0deg 0% 5.9% / var(--tw-bg-opacity));
+    scroll-behavior: smooth;
+    scroll-padding-block-start:50px
 }
 
 

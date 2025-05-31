@@ -20,7 +20,9 @@ import CSSLOGO from "./assets/css-svgrepo-com.svg"
 import MATERIALTAILWINDLOGO from "./assets/MATERIALTAILWINDLOGO.svg"
 import LINKEDINLOGO from "./assets/linkedin-svgrepo-com.svg"
 import TYPESCRIPTLOGO from "./assets/TSLOGO.svg"
-
+import FIGMALOGO from  "./assets/FIGMALOGO.svg"
+import JSLOGO from "./assets/js-svgrepo-com.svg"
+import POSTMANLOGO from "./assets/postman-icon-svgrepo-com.svg"
 export const ProjectData = [
     {
         id: 1,
@@ -78,7 +80,7 @@ export const ProjectData = [
         Tech_Stack: [
             REACTICON, TYPESCRIPTLOGO, TAILWINDLOGO, SUPABASE, SHADCNUILOGO
         ],
-        Project_URL: "https://pudoc-west-children-monitoring.vercel.app/",
+        Project_URL: "https://4ps-monitoring.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/PudocWestChildrenMonitoring",
         IsMobileApp: false,
     }
@@ -97,6 +99,9 @@ export const SocialMediaLink = [
 
 
 export const Technology = [
+    JSLOGO,
+    HTMLLOGO,
+    CSSLOGO,
     REACTICON,
     TSLOGO,
     TAILWINDLOGO,
@@ -106,10 +111,11 @@ export const Technology = [
     PHPLOGO,
     GITHUBLOGO,
     MATERIALTAILWINDLOGO,
-    HTMLLOGO,
-    CSSLOGO,
     NATIVE,
-    SHADCNUILOGO
+    SHADCNUILOGO,
+    FIGMALOGO,
+    POSTMANLOGO
+
 ]
 
 

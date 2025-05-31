@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.2.0",
     "framer-motion": "^12.9.4",
     "lodash-move": "^1.1.1",
+    "lucide-react": "^0.511.0",
     "motion": "^12.9.2",
     "motion-plus": "^0.1.6",
     "react": "^19.0.0",
