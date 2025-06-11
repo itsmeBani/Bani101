@@ -26,7 +26,7 @@ function EducationalTimeLine({data}) {
                                     </div>
                                 </div>
 
-                                {index !== 2 && (
+                                {index !== data?.length -1  && (
                                     <motion.div initial={{opacity:0, height:0,}}
                                                 viewport={{ once: true }}
                                                 whileInView={{opacity:1, height:"100%",transition:{delay : index * 0.3, type: "spring",

@@ -133,7 +133,7 @@ export const Technology = [
 export const EducationalAttainment = [
     {
         name: "Ilocos Sur Polytechnic State College",
-        description: "Earned my Bachelor of Science in Information Technology (BSIT), where I not only gained academic knowledge but also pursued self-taught skills in software development.",
+        description: "Earned my Bachelor of Science in Information Technology (BSIT), where I gained strong academic knowledge and further advanced my skills through self-taught software development. During my final year, I was honored with the Best Capstone Project Award and recognized as the Best Mobile Developer of the Year, highlighting my commitment to innovation and excellence in mobile application development.",
         major: "Bachelor of Science in Information Technology (BSIT",
         address: "",
         year: "2025",
@@ -147,14 +147,6 @@ export const EducationalAttainment = [
         year: "2021",
         present: true
     },
-    {
-        name: "Tagudin Central School",
-        description: "My academic journey began here, where I built essential skills in communication, collaboration, and curiosity that laid the groundwork for my future studies.",
-        major: "Elementary Education",
-        address: "Del Pilar, Tagudin, Ilocos Sur",
-        year: "2016",
-        present: true
-    }
 ];
 
 
