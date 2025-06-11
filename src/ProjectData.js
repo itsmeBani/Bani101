@@ -20,9 +20,20 @@ import CSSLOGO from "./assets/css-svgrepo-com.svg"
 import MATERIALTAILWINDLOGO from "./assets/MATERIALTAILWINDLOGO.svg"
 import LINKEDINLOGO from "./assets/linkedin-svgrepo-com.svg"
 import TYPESCRIPTLOGO from "./assets/TSLOGO.svg"
-import FIGMALOGO from  "./assets/FIGMALOGO.svg"
+import FIGMALOGO from "./assets/FIGMALOGO.svg"
 import JSLOGO from "./assets/js-svgrepo-com.svg"
 import POSTMANLOGO from "./assets/postman-icon-svgrepo-com.svg"
+import CapstoneBook from "./assets/d9a78b74-79ba-481e-af04-3269ec6767ba.jpg"
+import RESEARCHCONGRESSPIC from "./assets/researchcongresspic.jpg"
+import CodingPic2 from "./assets/f5f575e3-8c43-4bab-afaa-c3bab8df9c7f.jpg"
+import MOBILEDEVELOPEROFTHEYEAR from "./assets/mobiledeveloperoftheyear.png"
+import DEFENSEPIC from "./assets/849d6138-dc2b-434b-8a22-71fd46ba262f.jpg"
+import CapstoneDefense from "./assets/8ba1b397-0713-4350-a2ea-7e3fe51fcebd (1).jpg"
+import IOTPIC from "./assets/ba407c9e-c7c0-4bd1-a452-5d546076daa5.jpg"
+import BESTCAPSTONECERTIFICATE from "./assets/bestcapstone.png"
+import BESTMOBILEDEVELOPERPDF from  "././assets/cert/bestmobiledev.pdf"
+import  UPWORKLOGO from  "./assets/UPWORKLOGO.svg"
+import JOBSTREETLOGO from "./assets/JOBSTREETLOGO.svg"
 export const ProjectData = [
     {
         id: 1,
@@ -83,20 +94,20 @@ export const ProjectData = [
         Project_URL: "https://4ps-monitoring.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/PudocWestChildrenMonitoring",
         IsMobileApp: false,
-    }
+    },
 
 ]
 
 
 export const SocialMediaLink = [
     {href: 'https://web.facebook.com/jiovani.fabro.6/', src: FACEBOOKLOGO, alt: 'Facebook'},
-    {href: '#', src: INSTAGRAMLOGO, alt: 'Instagram'},
     {href: 'https://github.com/itsmeBani', src: GITHUBLOGO, alt: 'Github'},
-    {href: '#', src: CVLOGO, alt: 'CV'},
-    {href: 'https://www.linkedin.com/in/jiovani-fabro-97953a359/', src: LINKEDINLOGO, alt: "LinkedIn"}
+    {href: 'https://drive.google.com/drive/u/0/folders/1UmmkddHVEmQV-BIAf1e_r4iimRY0mUAL', src: CVLOGO, alt: 'CV'},
+    {href: 'https://www.linkedin.com/in/jiovani-fabro-97953a359/', src: LINKEDINLOGO, alt: "LinkedIn"},
+    {href: 'https://www.upwork.com/freelancers/~012ccca59257d34b4b?mp_source=share', src: UPWORKLOGO, alt: "UPWORKLOGO"},
+    {href: 'https://ph.jobstreet.com/profile/jiovani-fabro-4n0ScNYqKr', src: JOBSTREETLOGO, alt: "JOBSTREETLOGO"}
 
 ];
-
 
 export const Technology = [
     JSLOGO,
@@ -145,3 +156,28 @@ export const EducationalAttainment = [
         present: true
     }
 ];
+
+
+export const PhotoCollageData = [
+    CapstoneBook,
+
+    CodingPic2,
+    DEFENSEPIC,
+    RESEARCHCONGRESSPIC,
+    CapstoneDefense,
+    IOTPIC
+]
+
+
+export const CertificateData = [
+    {
+        url: MOBILEDEVELOPEROFTHEYEAR,
+        fileDownload: BESTMOBILEDEVELOPERPDF,
+        description:"BEST_MOBILE_DEVELOPER"
+    },
+    {
+        url:BESTCAPSTONECERTIFICATE,
+        fileDownload: BESTMOBILEDEVELOPERPDF,
+        description:"BEST_CAPSTONE_PROJECT"
+    }
+]

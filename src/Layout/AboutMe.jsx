@@ -5,6 +5,7 @@ import Header from "../Component/Header.jsx";
 import {motion} from "motion/react";
 import EducationalTimeLine from "../Component/EducationalTimeLine.jsx";
 import PhotoCollage from "../Component/PhotoCollage.jsx";
+import CertificateAwards from "../Component/CertificateAwards.jsx";
 function AboutMe(props) {
 
 
@@ -64,9 +65,11 @@ function AboutMe(props) {
 
                 </div>
             </div>
-            <EducationalTimeLine data={EducationalAttainment}/>
-
-               <PhotoCollage/>
+              <div className="flex flex-col gap-5">
+                  <EducationalTimeLine data={EducationalAttainment}/>
+                  <CertificateAwards/>
+                  <PhotoCollage/>
+              </div>
         </section>
     );
 }

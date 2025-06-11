@@ -5,14 +5,14 @@ function Navbar() {
     const { scrollY } = useScroll();
     const controls = useAnimation();
 
-    useMotionValueEvent(scrollY, 'change', (latest) => {
+    useMotionValueEvent(scrollY, 'change', async (latest) => {
         if (scrollY.current === 0 ){
-            controls.start('visible');
-        }  else if (scrollY.prev > latest ){
-            controls.start('visible');
+           await controls.start('visible');
+        }  else if (scrollY?.prev > latest ){
+          await  controls.start('visible');
         }
         else {
-            controls.start('hidden');
+          await  controls.start('hidden');
         }
 
     });
@@ -53,16 +53,16 @@ function Navbar() {
             variants={variants}
             initial="visible"
             animate={controls}
-            className="bg-white/2 backdrop-blur-sm  fixed    z-[1111] w-full  px-[20rem] "
+            className="bg-white/2 backdrop-blur-sm  fixed    z-[11111] w-full  px-[20rem] "
         >
-            <div className="flex justify-between h-full py-4">
-                <div className="text-foreground-light-description">
-                    logo
-                </div>
+            <div className="flex justify-center h-full py-5">
+                {/*<div className="text-foreground-light-description">*/}
+                {/*    logo*/}
+                {/*</div>*/}
                <ul className="flex gap-4">
                    <li className="text-foreground-light-description"><a href={"#projects"}>Projects</a></li>
                    <li className="text-foreground-light-description"><a href={"#aboutme"}>About</a></li>
-                   <li className="text-foreground-light-description">Contact</li>
+                   <li className="text-foreground-light-description"><a href={"#contact"}>Contact</a></li>
 
                </ul>
             </div>
