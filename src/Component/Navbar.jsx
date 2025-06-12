@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useMotionValueEvent, useScroll, motion, useAnimation } from 'framer-motion';
-
+import  LOGOTEMPLATE from  "../assets/LOGOTEMPLATE.webp"
 function Navbar() {
     const { scrollY } = useScroll();
     const controls = useAnimation();
@@ -35,7 +35,7 @@ function Navbar() {
     useEffect(() => {
         const handleMouseMove = (event) => {
             console.log(event.clientY)
-          if (event.clientY < 75){
+          if (event.clientY < 20){
               controls.start('visible');
               console.log("acceess")
           }
@@ -53,16 +53,16 @@ function Navbar() {
             variants={variants}
             initial="visible"
             animate={controls}
-            className="bg-white/2 backdrop-blur-sm  fixed    z-[11111] w-full  px-[20rem] "
+            className="bg-white/2 backdrop-blur-sm  fixed    z-[11111] w-full px-2 lg:px-[20rem] "
         >
-            <div className="flex justify-center h-full py-5">
-                {/*<div className="text-foreground-light-description">*/}
-                {/*    logo*/}
-                {/*</div>*/}
-               <ul className="flex gap-4">
-                   <li className="text-foreground-light-description"><a href={"#projects"}>Projects</a></li>
-                   <li className="text-foreground-light-description"><a href={"#aboutme"}>About</a></li>
-                   <li className="text-foreground-light-description"><a href={"#contact"}>Contact</a></li>
+            <div className="flex justify-between h-full py py-2">
+                <div className="">
+                   <a href={"#"}> <img src={LOGOTEMPLATE} className={"w-[50px]"} alt={"Bani"}/></a>
+                </div>
+               <ul className="flex place-items-center lg:text-sm text-[14px] gap-4">
+                   <li className="text-foreground-light-description hover:text-[#00e673]"><a href={"#projects"}>Projects</a></li>
+                   <li className="text-foreground-light-description hover:text-[#00e673]"><a href={"#aboutme"}>About</a></li>
+                   <li className="text-foreground-light-description hover:text-[#00e673]"><a href={"#contact"}>Contact</a></li>
 
                </ul>
             </div>

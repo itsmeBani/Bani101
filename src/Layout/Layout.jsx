@@ -4,10 +4,11 @@ import Introduction from "./Introduction.jsx";
 import AboutMe from "./AboutMe.jsx";
 import Contact from "./Contact.jsx";
 import {Toaster} from "sonner";
+import Navbar from "../Component/Navbar.jsx";
 function Layout(props) {
     return (
        <section className="flex flex-col h-full  overflow-hidden">
-           {/*<Navbar/>*/}
+           <Navbar/>
            <Introduction/>
            <Projects/>
            <AboutMe/>
