@@ -102,7 +102,7 @@ export const ProjectData = [
 export const SocialMediaLink = [
     {href: 'https://web.facebook.com/jiovani.fabro.6/', src: FACEBOOKLOGO, alt: 'Facebook'},
     {href: 'https://github.com/itsmeBani', src: GITHUBLOGO, alt: 'Github'},
-    {href: 'https://drive.google.com/drive/u/0/folders/1UmmkddHVEmQV-BIAf1e_r4iimRY0mUAL', src: CVLOGO, alt: 'CV'},
+    {href: 'https://drive.google.com/file/d/1Ttj4G4KMB2w1K4jXHyMp_ItUYaDStcCV/view?usp=sharing', src: CVLOGO, alt: 'CV'},
     {href: 'https://www.linkedin.com/in/jiovani-fabro-97953a359/', src: LINKEDINLOGO, alt: "LinkedIn"},
     {href: 'https://www.upwork.com/freelancers/~012ccca59257d34b4b?mp_source=share', src: UPWORKLOGO, alt: "UPWORKLOGO"},
     {href: 'https://ph.jobstreet.com/profile/jiovani-fabro-4n0ScNYqKr', src: JOBSTREETLOGO, alt: "JOBSTREETLOGO"}
