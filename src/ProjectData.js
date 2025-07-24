@@ -34,6 +34,7 @@ import BESTCAPSTONECERTIFICATE from "./assets/bestcapstone.png"
 import BESTMOBILEDEVELOPERPDF from  "././assets/cert/bestmobiledev.pdf"
 import  UPWORKLOGO from  "./assets/UPWORKLOGO.svg"
 import JOBSTREETLOGO from "./assets/JOBSTREETLOGO.svg"
+import FASTAPILOGO from "./assets/FAST-API-LOGO.svg"
 export const ProjectData = [
     {
         id: 1,
@@ -46,18 +47,6 @@ export const ProjectData = [
         Project_URL: "",
         Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
         IsMobileApp: true,
-    },
-    {
-        id: 2,
-        Logo: TERMINALABLELOGO,
-        Project_Name: "Terminalable",
-        Description: "OJT Documentation with image and description attachment, exportable as PDF ",
-        Tech_Stack: [
-            REACTICON, FIREBASELOGO, TAILWINDLOGO
-        ],
-        Project_URL: "https://terminalable.vercel.app/",
-        Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
-        IsMobileApp: false,
     },
     {
         id: 3,
@@ -95,7 +84,30 @@ export const ProjectData = [
         Github_Link: "https://github.com/itsmeBani/PudocWestChildrenMonitoring",
         IsMobileApp: false,
     },
-
+    {
+        id: 2,
+        Logo: TERMINALABLELOGO,
+        Project_Name: "Terminalable",
+        Description: "OJT Documentation with image and description attachment, exportable as PDF ",
+        Tech_Stack: [
+            REACTICON, FIREBASELOGO, TAILWINDLOGO
+        ],
+        Project_URL: "https://terminalable.vercel.app/",
+        Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
+        IsMobileApp: false,
+    },
+    {
+        id: 2,
+        Logo: TAILWINDLOGO,
+        Project_Name: "FreshGroup",
+        Description: "A website clusters first-year students using unsupervised learning to help schools personalize support and boost outcomes.",
+        Tech_Stack: [
+            REACTICON,TYPESCRIPTLOGO, TAILWINDLOGO,SUPABASE,SHADCNUILOGO,FASTAPILOGO
+        ],
+        Project_URL: "https://freshgroup.vercel.app/login",
+        Github_Link: "https://github.com/itsmeBani/FRESHGROUP",
+        IsMobileApp: false,
+    },
 ]
 
 
