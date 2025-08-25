@@ -35,6 +35,8 @@ import BESTMOBILEDEVELOPERPDF from  "././assets/cert/bestmobiledev.pdf"
 import  UPWORKLOGO from  "./assets/UPWORKLOGO.svg"
 import JOBSTREETLOGO from "./assets/JOBSTREETLOGO.svg"
 import FASTAPILOGO from "./assets/FAST-API-LOGO.svg"
+import MUSICPLAYERLOGO from "./assets/MUSICPLAYERLOGO.png"
+import FRESHGROUPLOGO from "./assets/FRESHGROUPLOGO.svg"
 export const ProjectData = [
     {
         id: 1,
@@ -50,18 +52,6 @@ export const ProjectData = [
     },
     {
         id: 3,
-        Logo: SAMSANGTECHLOGO,
-        Project_Name: "SAMSANG TECH",
-        Description: "A simple app where users can browse and buy gadgets easily ",
-        Tech_Stack: [
-            REACTICON, PHPLOGO, TAILWINDLOGO
-        ],
-        Project_URL: "https://shop-ruddy-eta.vercel.app/",
-        Github_Link: "https://github.com/itsmeBani/shop",
-        IsMobileApp: false,
-    },
-    {
-        id: 4,
         Logo: VITE,
         Project_Name: "Pudoc West Nutrition Monitoring",
         Description: "An app designed to help monitor and manage the nutrition status of individuals in Pudoc West",
@@ -85,20 +75,21 @@ export const ProjectData = [
         IsMobileApp: false,
     },
     {
-        id: 2,
-        Logo: TERMINALABLELOGO,
-        Project_Name: "Terminalable",
-        Description: "OJT Documentation with image and description attachment, exportable as PDF ",
+        id: 7,
+        Logo: MUSICPLAYERLOGO,
+        Project_Name: "Music-Player",
+        Description: "A simple music player for android app that uses spotify api",
         Tech_Stack: [
-            REACTICON, FIREBASELOGO, TAILWINDLOGO
+            REACTICON, EXPOICON,SUPABASE,SHADCNUILOGO
         ],
-        Project_URL: "https://terminalable.vercel.app/",
-        Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
+        Project_URL: "https://music-player-web-sigma.vercel.app/",
+        Github_Link: "https://github.com/itsmeBani/music-player-web",
         IsMobileApp: false,
     },
+
     {
-        id: 2,
-        Logo: TAILWINDLOGO,
+        id: 6,
+        Logo: FRESHGROUPLOGO,
         Project_Name: "FreshGroup",
         Description: "A website clusters first-year students using unsupervised learning to help schools personalize support and boost outcomes.",
         Tech_Stack: [
@@ -108,6 +99,31 @@ export const ProjectData = [
         Github_Link: "https://github.com/itsmeBani/FRESHGROUP",
         IsMobileApp: false,
     },
+    // {
+    //     id: 5,
+    //     Logo: TERMINALABLELOGO,
+    //     Project_Name: "Terminalable",
+    //     Description: "OJT Documentation with image and description attachment, exportable as PDF ",
+    //     Tech_Stack: [
+    //         REACTICON, FIREBASELOGO, TAILWINDLOGO
+    //     ],
+    //     Project_URL: "https://terminalable.vercel.app/",
+    //     Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
+    //     IsMobileApp: false,
+    // },
+    {
+        id: 2,
+        Logo: SAMSANGTECHLOGO,
+        Project_Name: "SAMSANG TECH",
+        Description: "A simple app where users can browse and buy gadgets easily ",
+        Tech_Stack: [
+            REACTICON, PHPLOGO, TAILWINDLOGO
+        ],
+        Project_URL: "https://shop-ruddy-eta.vercel.app/",
+        Github_Link: "https://github.com/itsmeBani/shop",
+        IsMobileApp: false,
+    },
+   
 ]
 
 
