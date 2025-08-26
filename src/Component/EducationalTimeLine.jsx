@@ -43,7 +43,7 @@ function EducationalTimeLine({data}) {
                                   <p className="w-full italic text-foreground-light-description font-bold lg:text-md  text-white">
                                       {info.name}<span className="text-foreground-light "> ({info.year})</span>
                                   </p>
-                                  <p className="w-full  text-foreground-light-description h-full text-sm lg:text-lg text-white">
+                                  <p className="w-full   text-foreground-light-description h-full text-sm lg:text-lg text-white font-thin">
                                       {info.description}
 
                                    </p>

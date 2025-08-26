@@ -37,6 +37,7 @@ import JOBSTREETLOGO from "./assets/JOBSTREETLOGO.svg"
 import FASTAPILOGO from "./assets/FAST-API-LOGO.svg"
 import MUSICPLAYERLOGO from "./assets/MUSICPLAYERLOGO.png"
 import FRESHGROUPLOGO from "./assets/FRESHGROUPLOGO.svg"
+import  TANSTACKLOGO from "./assets/TANSTACKLOGO.png"
 export const ProjectData = [
     {
         id: 1,
@@ -99,18 +100,6 @@ export const ProjectData = [
         Github_Link: "https://github.com/itsmeBani/FRESHGROUP",
         IsMobileApp: false,
     },
-    // {
-    //     id: 5,
-    //     Logo: TERMINALABLELOGO,
-    //     Project_Name: "Terminalable",
-    //     Description: "OJT Documentation with image and description attachment, exportable as PDF ",
-    //     Tech_Stack: [
-    //         REACTICON, FIREBASELOGO, TAILWINDLOGO
-    //     ],
-    //     Project_URL: "https://terminalable.vercel.app/",
-    //     Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
-    //     IsMobileApp: false,
-    // },
     {
         id: 2,
         Logo: SAMSANGTECHLOGO,
@@ -138,24 +127,25 @@ export const SocialMediaLink = [
 ];
 
 export const Technology = [
-    JSLOGO,
-    HTMLLOGO,
-    CSSLOGO,
-    REACTICON,
-    TSLOGO,
-    TAILWINDLOGO,
-    EXPOICON,
-    FIREBASELOGO,
-    SUPABASE,
-    PHPLOGO,
-    GITHUBLOGO,
-    MATERIALTAILWINDLOGO,
-    NATIVE,
-    SHADCNUILOGO,
-    FIGMALOGO,
-    POSTMANLOGO
+    { logo: JSLOGO, name: "JavaScript" },
+    { logo: HTMLLOGO, name: "HTML" },
+    { logo: CSSLOGO, name: "CSS" },
+    { logo: REACTICON, name: "React" },
+    { logo: TSLOGO, name: "TypeScript" },
+    { logo: TAILWINDLOGO, name: "Tailwind CSS" },
+    { logo: EXPOICON, name: "Expo" },
+    { logo: FIREBASELOGO, name: "Firebase" },
+    { logo: SUPABASE, name: "Supabase" },
+    { logo: PHPLOGO, name: "PHP" },
+    { logo: GITHUBLOGO, name: "GitHub" },
+    { logo: MATERIALTAILWINDLOGO, name: "Material Tailwind" },
+    { logo: NATIVE, name: "React Native" },
+    { logo: SHADCNUILOGO, name: "shadcn/ui" },
+    { logo: FIGMALOGO, name: "Figma" },
+    { logo: POSTMANLOGO, name: "Postman" },
+    { logo: TANSTACKLOGO, name: "TanStack" }
+];
 
-]
 
 
 export const EducationalAttainment = [

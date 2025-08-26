@@ -6,7 +6,7 @@ import {PhotoIcon} from "@heroicons/react/16/solid/index.js";
 function ProjectCard({info}) {
     const {Project_Name, Logo, Description, Github_Link, Tech_Stack,Project_URL,IsMobileApp} = info
     return (
-        <div style={{background: "hsl(0, 0%, 12.2%)"}} className="bg-[#1E1E1E] w-full h-full group border-[#2D2D2D] border-[1px] px-5 py-5 rounded-lg shadow-md">
+        <div style={{background: "hsl(0, 0%, 12.2%)"}} className=" bg-[#1E1E1E] w-full h-full group border-[#2D2D2D] border-[1px] px-5 py-5 rounded-lg shadow-md">
             <div className="flex gap-2   place-items-center justify-between">
                 <div className="flex place-items-center  ">
                     <div className="w-9 h-9 lg:w-12 lg:h-12 rounded-lg  relative">

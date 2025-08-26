@@ -11,7 +11,7 @@ function AboutMe(props) {
 
 
     return (
-        <section id="aboutme" className=" h-full w-full  flex flex-col">
+        <section id="aboutme" className=" h-full w-full  z-50 flex flex-col">
             <div className="">
                 <Header title={"About Me"}
                         description={"I’m someone who enjoys turning ideas into real projects and constantly learning along the way."}/>
@@ -44,18 +44,19 @@ function AboutMe(props) {
 
                     </header>
 
-                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7 ">
-                        {Technology?.map((url,index)=>{
+                    <main className="grid gap-2 grid-cols-4  lg:grid-cols-7 ">
+                        {Technology?.map((tool,index)=>{
 
-                            return <motion.div initial={{opacity:0, y:-10,}}
+                            return <motion.div className={"group "}  initial={{opacity:0, y:-10,}}
                                                viewport={{ once: true }}
                                                whileHover={{ scale: 1.4, transition: {type:"spring",duration:0.2 ,delay:0.1}}}
                                                whileInView={{opacity:1, y:0,transition:{delay : index * 0.3, type: "spring",
                                                        visualDuration: 0.5, bounce: 0.25}}}>
                                 <div className=" h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
-                                    <img draggable={false} alt={"icon"} src={url} className="w-full h-full p-3.5 " />
+                                    <img draggable={false} alt={"icon"} src={tool.logo} className="w-full h-full p-3.5 " />
 
                                 </div>
+                                    <div className={"text-white  border border-[#00e673] left-1/2 -translate-x-1/2  bg-[#006239]  absolute text-xs  px-2  rounded-[4px] group-hover:block hidden -top-6 "}><p className={"font-normal text-[9px] text-nowrap"}>{tool?.name}</p></div>
                             </motion.div>
                         })}
 
