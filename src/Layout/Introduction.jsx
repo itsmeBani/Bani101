@@ -18,6 +18,7 @@ function Introduction(props) {
          </div>
             <AnimatedBackground/>
 
+            <div className="absolute inset-0  h-full w-full z-23  bg-[#000000]/50 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
 
 

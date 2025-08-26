@@ -11,13 +11,13 @@ function AboutMe(props) {
 
 
     return (
-        <section id="aboutme" className=" h-full w-full  z-50 flex flex-col">
+        <section id="aboutme" className=" h-full w-full   flex flex-col">
             <div className="">
                 <Header title={"About Me"}
                         description={"I’m someone who enjoys turning ideas into real projects and constantly learning along the way."}/>
 
             </div>
-            <div className="grid grid-cols-1  md:grid-cols-2 w-full gap-3 lg:gap-5 px-5    lg:px-[8rem] pb-[3rem]">
+            <div className="grid grid-cols-1 z-50 md:grid-cols-2 w-full gap-3 lg:gap-5 px-5    lg:px-[8rem] pb-[3rem]">
 
                 <div className="w-full h-auto bg-background border-[#2D2D2D] border-[1px] p-6 lg:p-8 rounded-lg shadow-md  ">
                     <h2 className="text-xl lg:text-3xl  font-bold  text-foreground-light  mb-4">Hi, I'm Jiovani Fabro 👋</h2>
@@ -66,7 +66,7 @@ function AboutMe(props) {
 
                 </div>
             </div>
-              <div className="flex flex-col gap-5">
+              <div className="flex z-50 flex-col gap-5">
                   <EducationalTimeLine data={EducationalAttainment}/>
                   <CertificateAwards/>
                   <PhotoCollage/>
