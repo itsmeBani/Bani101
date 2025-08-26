@@ -50,6 +50,7 @@ export const ProjectData = [
         Project_URL: "",
         Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
         IsMobileApp: true,
+        MobileAppProjectLink:"https://github.com/itsmeBani/DYIPSPOT"
     },
     {
         id: 3,
@@ -79,13 +80,14 @@ export const ProjectData = [
         id: 7,
         Logo: MUSICPLAYERLOGO,
         Project_Name: "Music-Player",
-        Description: "A simple music player for android app that uses spotify api",
+        Description: "A music player for Android and Web, integrated with the Spotify API for browsing and streaming.",
         Tech_Stack: [
             REACTICON, EXPOICON,SUPABASE,SHADCNUILOGO
         ],
         Project_URL: "https://music-player-web-sigma.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/music-player-web",
-        IsMobileApp: false,
+        IsMobileApp: true,
+        MobileAppProjectLink:"https://github.com/itsmeBani/music-player-react-native"
     },
 
     {

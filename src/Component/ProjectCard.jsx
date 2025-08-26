@@ -4,7 +4,7 @@ import ANDROIDLOGO from  "../assets/ANDROIDLOGO.svg"
 import {PhotoIcon} from "@heroicons/react/16/solid/index.js";
 
 function ProjectCard({info}) {
-    const {Project_Name, Logo, Description, Github_Link, Tech_Stack,Project_URL,IsMobileApp} = info
+    const {Project_Name, Logo, Description,MobileAppProjectLink, Github_Link, Tech_Stack,Project_URL,IsMobileApp} = info
     return (
         <div style={{background: "hsl(0, 0%, 12.2%)"}} className=" bg-[#1E1E1E] w-full h-full group border-[#2D2D2D] border-[1px] px-5 py-5 rounded-lg shadow-md">
             <div className="flex gap-2   place-items-center justify-between">
@@ -18,7 +18,7 @@ function ProjectCard({info}) {
 
                </div>
                 <div className="flex gap-2 ">
-                 {IsMobileApp &&    <a href={Github_Link} className={"p-1.5 w-10 h-10 rounded-md relative bg-[#191919]"}>
+                 {IsMobileApp &&    <a href={MobileAppProjectLink} className={"p-1.5 w-10 h-10 rounded-md relative bg-[#191919]"}>
                       <img alt={""} src={ANDROIDLOGO} className="w-7"/>
                  </a> }
                  <a href={Github_Link} className={"p-1.5 w-10 h-10 rounded-md relative bg-[#191919]"}>
