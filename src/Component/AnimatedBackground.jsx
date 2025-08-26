@@ -17,6 +17,7 @@ export const AnimatedBackground = ({ className, ...rest }) => {
         "rgb(147 197 253)", // blue-300
         "rgb(165 180 252)", // indigo-300
         "rgb(196 181 253)", // violet-300
+        "rgb(255,255,255)" // violet-300
     ];
     const getRandomColor = () => {
         return colors[Math.floor(Math.random() * colors.length)];
