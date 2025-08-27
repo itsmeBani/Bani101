@@ -10,6 +10,8 @@
 
 html{
     background: black;
+    scroll-behavior: smooth;
+    scroll-padding-block-start: 50px;
 }
 
 body {
@@ -19,8 +21,7 @@ body {
             hsl(0deg 0% 0% / var(--tw-bg-opacity)),   /* dark at top */
             hsl(0deg 0% 7% / var(--tw-bg-opacity))   /* lighter at bottom */
     );
-    scroll-behavior: smooth;
-    scroll-padding-block-start: 50px;
+
 }
 
 
