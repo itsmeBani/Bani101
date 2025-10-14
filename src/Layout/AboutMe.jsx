@@ -24,7 +24,7 @@ function AboutMe(props) {
                 />
 
             </div>
-            <div className="grid grid-cols-1 z-50 md:grid-cols-2 w-full place-items-start gap-3 lg:gap-3 pb-[3rem]">
+            <div className="grid grid-cols-1 z-50 md:grid-cols-2 w-full place-items-start gap-3 lg:gap-3 ">
 
 
 
@@ -43,8 +43,9 @@ function AboutMe(props) {
                         </p>
                     </header>
 
-                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7">
-                        {Technology?.frontend?.map((tool) => (
+                    <main className="grid gap-2 justify-start grid-flow-row auto-rows-max grid-cols-[repeat(auto-fill,minmax(70px,auto))]">
+
+                    {Technology?.frontend?.map((tool) => (
                             <div className="group" key={tool.name}>
                                 <div className="h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
                                     <img draggable={false} alt={tool.name} src={tool.logo} className="w-full h-full p-3.5" />
@@ -72,8 +73,9 @@ function AboutMe(props) {
                         </p>
                     </header>
 
-                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7">
-                        {Technology?.backend?.map((tool) => (
+                    <main className="grid gap-2 justify-start grid-flow-row auto-rows-max grid-cols-[repeat(auto-fill,minmax(70px,auto))]">
+
+                    {Technology?.backend?.map((tool) => (
                             <div className="group" key={tool.name}>
                                 <div className="h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
                                     <img draggable={false} alt={tool.name} src={tool.logo} className="w-full h-full p-3.5" />
@@ -101,8 +103,9 @@ function AboutMe(props) {
                         </p>
                     </header>
 
-                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7">
-                        {Technology?.tools?.map((tool) => (
+                    <main className="grid gap-2 justify-start grid-flow-row auto-rows-max grid-cols-[repeat(auto-fill,minmax(70px,auto))]">
+
+                    {Technology?.tools?.map((tool) => (
                             <div className="group" key={tool.name}>
                                 <div className="h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
                                     <img draggable={false} alt={tool.name} src={tool.logo} className="w-full h-full p-3.5" />

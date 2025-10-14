@@ -10,7 +10,7 @@ import Profile from "../Component/Profile.jsx";
 import ProfileOverview from "../Component/ProfileOverview.jsx";
 function Layout(props) {
     return (
-       <section className="flex lg:flex-row flex-col  h-full lg:gap-10 p-8   overflow-hidden">
+       <section className="flex lg:flex-row flex-col  h-full lg:gap-10 p-3 lg:p-8   overflow-hidden">
 
            {/*<Navbar/>*/}
 

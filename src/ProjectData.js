@@ -55,7 +55,7 @@ export const ProjectData = [
     },
     {
         id: 1,
-        Logo: DYIPSPOTLOGO,
+        Logo: VITE,
         Project_Name: "Talkio",
         Description: "A real-time messaging app that lets users connect, chat, and share updates instantly with friends",
         Tech_Stack: [
@@ -63,7 +63,7 @@ export const ProjectData = [
         ],
         Project_URL: "",
         Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
-        IsMobileApp: true,
+        IsMobileApp: false,
         MobileAppProjectLink:"https://github.com/itsmeBani/DYIPSPOT"
     },
     {

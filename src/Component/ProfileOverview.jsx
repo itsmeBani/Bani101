@@ -3,7 +3,7 @@ import React from 'react';
 function ProfileOverview() {
     return (
         <div className="w-full border-[#2D2D2D] border-[1px] p-6 lg:p-8 rounded-lg shadow-md  ">
-            <h2 className="text-xl lg:text-3xl  font-bold  text-foreground-light  mb-4">Who I Am</h2>
+            <h2 className="text-xl lg:text-3xl  font-bold  text-foreground-light  mb-4"><span className={"text-[#0e6]"}>Who</span> I Am</h2>
             <p className="text-sm text-white lg:text-[16px] text-foreground-light-description leading-relaxed">
                 I’m a passionate developer dedicated to turning ideas into impactful digital experiences. My journey in technology is fueled by curiosity and creativity.
             </p>

@@ -3,7 +3,7 @@ import {SocialMediaLink} from "../ProjectData.js";
 
 function SocialMedia(props) {
     return (
-        <div className="flex flex-wrap gap-2 items-start justify-start w-full sm:justify-center md:justify-start">
+        <div className="flex flex-wrap gap-2 items-start justify-start w-full justify-center">
             {SocialMediaLink?.map((link, index) => (
                 <a
                     key={index}
