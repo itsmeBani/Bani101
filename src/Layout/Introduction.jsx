@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialMedia from "../Component/SocialMedia.jsx";
-import {AnimatedBackground} from "../Component/AnimatedBackground.jsx";
+
 function Introduction(props) {
 
 
@@ -16,7 +16,7 @@ function Introduction(props) {
              </div>
            <SocialMedia/>
          </div>
-            <AnimatedBackground/>
+            {/*<AnimatedBackground/>*/}
 
             <div className="absolute inset-0  h-full w-full z-23  bg-[#000000]/50 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 

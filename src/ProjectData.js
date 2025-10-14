@@ -38,6 +38,7 @@ import FASTAPILOGO from "./assets/FAST-API-LOGO.svg"
 import MUSICPLAYERLOGO from "./assets/MUSICPLAYERLOGO.png"
 import FRESHGROUPLOGO from "./assets/FRESHGROUPLOGO.svg"
 import  TANSTACKLOGO from "./assets/TANSTACKLOGO.png"
+import {MessageSquareMoreIcon} from "lucide-react"
 export const ProjectData = [
     {
         id: 1,
@@ -46,6 +47,19 @@ export const ProjectData = [
         Description: "A real-time jeep tracking app that monitors both jeep and passenger locations",
         Tech_Stack: [
             REACTICON, EXPOICON, FIREBASELOGO
+        ],
+        Project_URL: "",
+        Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
+        IsMobileApp: true,
+        MobileAppProjectLink:"https://github.com/itsmeBani/DYIPSPOT"
+    },
+    {
+        id: 1,
+        Logo: DYIPSPOTLOGO,
+        Project_Name: "Talkio",
+        Description: "A real-time messaging app that lets users connect, chat, and share updates instantly with friends",
+        Tech_Stack: [
+            REACTICON, TYPESCRIPTLOGO, SHADCNUILOGO,SUPABASE,TANSTACKLOGO
         ],
         Project_URL: "",
         Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
@@ -128,32 +142,40 @@ export const SocialMediaLink = [
 
 ];
 
-export const Technology = [
-    { logo: JSLOGO, name: "JavaScript" },
-    { logo: HTMLLOGO, name: "HTML" },
-    { logo: CSSLOGO, name: "CSS" },
-    { logo: REACTICON, name: "React" },
-    { logo: TSLOGO, name: "TypeScript" },
-    { logo: TAILWINDLOGO, name: "Tailwind CSS" },
-    { logo: EXPOICON, name: "Expo" },
-    { logo: FIREBASELOGO, name: "Firebase" },
-    { logo: SUPABASE, name: "Supabase" },
-    { logo: PHPLOGO, name: "PHP" },
-    { logo: GITHUBLOGO, name: "GitHub" },
-    { logo: MATERIALTAILWINDLOGO, name: "Material Tailwind" },
-    { logo: NATIVE, name: "React Native" },
-    { logo: SHADCNUILOGO, name: "shadcn/ui" },
-    { logo: FIGMALOGO, name: "Figma" },
-    { logo: POSTMANLOGO, name: "Postman" },
-    { logo: TANSTACKLOGO, name: "TanStack" }
-];
+export const Technology = {
+    frontend: [
+        { logo: HTMLLOGO, name: "HTML" },
+        { logo: CSSLOGO, name: "CSS" },
+        { logo: JSLOGO, name: "JavaScript" },
+        { logo: TSLOGO, name: "TypeScript" },
+        { logo: REACTICON, name: "React" },
+        { logo: NATIVE, name: "React Native" },
+        { logo: TAILWINDLOGO, name: "Tailwind CSS" },
+        { logo: MATERIALTAILWINDLOGO, name: "Material Tailwind" },
+        { logo: SHADCNUILOGO, name: "shadcn/ui" },
+    ],
+
+    backend: [
+        { logo: PHPLOGO, name: "PHP" },
+        { logo: SUPABASE, name: "Supabase" },
+        { logo: FIREBASELOGO, name: "Firebase" },
+    ],
+
+    tools: [
+        { logo: EXPOICON, name: "Expo" },
+        { logo: TANSTACKLOGO, name: "TanStack" },
+        { logo: GITHUBLOGO, name: "GitHub" },
+        { logo: FIGMALOGO, name: "Figma" },
+        { logo: POSTMANLOGO, name: "Postman" },
+    ],
+};
 
 
 
 export const EducationalAttainment = [
     {
         name: "Ilocos Sur Polytechnic State College",
-        description: "Earned my Bachelor of Science in Information Technology (BSIT), where I gained strong academic knowledge and further advanced my skills through self-taught software development. During my final year, I was honored with the Best Capstone Project Award and recognized as the Best Mobile Developer of the Year, highlighting my commitment to innovation and excellence in mobile application development.",
+        description: "Awarded Best Capstone Project and Best Mobile Developer of the Year for excellence in mobile application development",
         major: "Bachelor of Science in Information Technology (BSIT",
         address: "",
         year: "2025",

@@ -41,7 +41,8 @@ function ProjectCard({info}) {
 
                 </div>
                 <div className="flex w-full gap-2 justify-end">
-                     <a href={Project_URL}  className="text-white flex   bg-[#006239] btn-font px-3 rounded-md py-1">Take a look</a>
+                    <a href={Project_URL} target="_blank"
+                        rel="noopener noreferrer"  className="text-white flex   bg-[#006239] btn-font px-3 rounded-md py-1">Take a look</a>
 
                 </div>
             </div>

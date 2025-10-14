@@ -6,6 +6,9 @@ import {motion} from "motion/react";
 import EducationalTimeLine from "../Component/EducationalTimeLine.jsx";
 import PhotoCollage from "../Component/PhotoCollage.jsx";
 import CertificateAwards from "../Component/CertificateAwards.jsx";
+import {Database, FlaskConical, Laptop} from "lucide-react";
+import Profile from "../Component/Profile.jsx";
+import ProfileOverview from "../Component/ProfileOverview.jsx";
 function AboutMe(props) {
 
 
@@ -13,63 +16,109 @@ function AboutMe(props) {
     return (
         <section id="aboutme" className=" h-full w-full   flex flex-col">
             <div className="">
-                <Header title={"About Me"}
-                        description={"I’m someone who enjoys turning ideas into real projects and constantly learning along the way."}/>
+                <Header
+                    title={"My Tech Stack"}
+                    description={
+                        "These are the tools I use to create modern and responsive web experiences that provide seamless interaction and great user experience."
+                    }
+                />
 
             </div>
-            <div className="grid grid-cols-1 z-50 md:grid-cols-2 w-full gap-3 lg:gap-5 px-5    lg:px-[8rem] pb-[3rem]">
+            <div className="grid grid-cols-1 z-50 md:grid-cols-2 w-full place-items-start gap-3 lg:gap-3 pb-[3rem]">
 
-                <div className="w-full h-auto bg-background border-[#2D2D2D] border-[1px] p-6 lg:p-8 rounded-lg shadow-md  ">
-                    <h2 className="text-xl lg:text-3xl  font-bold  text-foreground-light  mb-4">Hi, I'm Jiovani Fabro 👋</h2>
-                    <p className="text-sm lg:text-[16px] text-foreground-light-description leading-relaxed">
-                        I’m a passionate developer who loves building real-world solutions with code. I’m always willing to learn, grow, and take on new challenges. My journey in tech is driven by curiosity, creativity, and the desire to turn ideas into impactful projects — whether through web development, mobile apps, or experimenting with new tools and frameworks.
-                    </p>
 
-                </div>
 
-                <div  className="w-full  p-5 lg:p-8 flex flex-col  gap-3 rounded-lg border-[1px] bg-background border-[#2D2D2D]">
-                    <header className="flex flex-col gap-2">
-                        <div className="flex items-center gap-2">
+                <div className="w-full p-5 lg:p-8 flex flex-col border-[1px] bg-background border-[#2D2D2D] gap-3 rounded-lg">
+                    <header className="flex flex-col gap-3">
+                        <div className="flex items-center gap-3">
                             <div className="p-2 bg-[#00311D] rounded-md">
-                                <Cog6ToothIcon className="w-5 text-brand-600" />
+                                <Laptop className="w-6 text-brand-600" />
                             </div>
-                            <h1 className="text-foreground-light text-lg lg:text-[25px] font-semibold">
-                                Tech Stack & Tools
+                            <h1 className="text-foreground-light w-full text-lg lg:text-[25px] font-semibold">
+                                Frontend
                             </h1>
                         </div>
-
                         <p className="lg:text-[16px] text-sm text-foreground-light-description">
-                            A collection of the programming languages, tools, and frameworks I’ve used to develop my projects.
+                            Technologies and frameworks I use to build user interfaces, interactive layouts, and responsive web experiences.
                         </p>
-
                     </header>
 
-                    <main className="grid gap-2 grid-cols-4  lg:grid-cols-7 ">
-                        {Technology?.map((tool,index)=>{
-
-                            return <motion.div className={"group "}  initial={{opacity:0, y:-10,}}
-                                               viewport={{ once: true }}
-                                               whileHover={{ scale: 1.4, transition: {type:"spring",duration:0.2 ,delay:0.1}}}
-                                               whileInView={{opacity:1, y:0,transition:{delay : index * 0.3, type: "spring",
-                                                       visualDuration: 0.5, bounce: 0.25}}}>
-                                <div className=" h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
-                                    <img draggable={false} alt={"icon"} src={tool.logo} className="w-full h-full p-3.5 " />
-
+                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7">
+                        {Technology?.frontend?.map((tool) => (
+                            <div className="group" key={tool.name}>
+                                <div className="h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
+                                    <img draggable={false} alt={tool.name} src={tool.logo} className="w-full h-full p-3.5" />
                                 </div>
-                                    <div className={"text-white  border border-[#00e673] left-1/2 -translate-x-1/2  bg-[#006239]  absolute text-xs  px-2  rounded-[4px] group-hover:block hidden -top-6 "}><p className={"font-normal text-[9px] text-nowrap"}>{tool?.name}</p></div>
-                            </motion.div>
-                        })}
-
+                                <div className="text-white border border-[#00e673] left-1/2 -translate-x-1/2 bg-[#006239] absolute text-xs px-2 rounded-[4px] group-hover:block hidden -top-6">
+                                    <p className="font-normal text-[9px] text-nowrap">{tool.name}</p>
+                                </div>
+                            </div>
+                        ))}
                     </main>
-
-
-
                 </div>
+
+                <div className="w-full p-5 lg:p-8 flex flex-col border-[1px] bg-background border-[#2D2D2D] gap-3 rounded-lg">
+                    <header className="flex flex-col gap-3">
+                        <div className="flex items-center gap-3">
+                            <div className="p-2 bg-[#00311D] rounded-md">
+                                <Database className="w-6 text-brand-600" />
+                            </div>
+                            <h1 className="text-foreground-light w-full text-lg lg:text-[25px] font-semibold">
+                                Backend
+                            </h1>
+                        </div>
+                        <p className="lg:text-[16px] text-sm text-foreground-light-description">
+                            Tools, frameworks, and databases I use to build server-side logic, manage data, and create robust APIs.
+                        </p>
+                    </header>
+
+                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7">
+                        {Technology?.backend?.map((tool) => (
+                            <div className="group" key={tool.name}>
+                                <div className="h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
+                                    <img draggable={false} alt={tool.name} src={tool.logo} className="w-full h-full p-3.5" />
+                                </div>
+                                <div className="text-white border border-[#00e673] left-1/2 -translate-x-1/2 bg-[#006239] absolute text-xs px-2 rounded-[4px] group-hover:block hidden -top-6">
+                                    <p className="font-normal text-[9px] text-nowrap">{tool.name}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </main>
+                </div>
+
+                <div className="w-full p-5 lg:p-8 flex flex-col border-[1px] bg-background border-[#2D2D2D] gap-3 rounded-lg">
+                    <header className="flex flex-col gap-3">
+                        <div className="flex items-center gap-3">
+                            <div className="p-2 bg-[#00311D] rounded-md">
+                                <FlaskConical className="w-6 text-brand-600" />
+                            </div>
+                            <h1 className="text-foreground-light w-full text-lg lg:text-[25px] font-semibold">
+                                Developer Tools
+                            </h1>
+                        </div>
+                        <p className="lg:text-[16px] text-sm text-foreground-light-description">
+                            Utilities and software that help me streamline development, testing, and deployment of my projects.
+                        </p>
+                    </header>
+
+                    <main className="grid gap-2 grid-cols-4 lg:grid-cols-7">
+                        {Technology?.tools?.map((tool) => (
+                            <div className="group" key={tool.name}>
+                                <div className="h-16 flex w-15 rounded-md border-[1px] border-[#2D2D2D] bg-[#1F1F1F]">
+                                    <img draggable={false} alt={tool.name} src={tool.logo} className="w-full h-full p-3.5" />
+                                </div>
+                                <div className="text-white border border-[#00e673] left-1/2 -translate-x-1/2 bg-[#006239] absolute text-xs px-2 rounded-[4px] group-hover:block hidden -top-6">
+                                    <p className="font-normal text-[9px] text-nowrap">{tool.name}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </main>
+                </div>
+
             </div>
               <div className="flex z-50 flex-col gap-5">
-                  <EducationalTimeLine data={EducationalAttainment}/>
-                  <CertificateAwards/>
-                  <PhotoCollage/>
+                  {/*<CertificateAwards/>*/}
+                  {/*<PhotoCollage/>*/}
               </div>
         </section>
     );

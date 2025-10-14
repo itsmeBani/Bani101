@@ -40,25 +40,18 @@ function CertificateAwards(props) {
                 <div className="   grid gap-3 grid-cols-1 lg:grid-cols-3">
                     {CertificateData.map((file, index) => {
                         return (
-                            <motion.div initial={{opacity: 0, y: -10,}}
-                                        viewport={{once: true}}
-                                        whileInView={{
-                                            opacity: 1, y: 0, transition: {
-                                                delay: index * 0.3, type: "spring",
-                                                visualDuration: 0.5, bounce: 0.25
-                                            }
-                                        }} key={index}
+                            <div key={index}
                                         className="overflow-hidden relative w-full  group/item  rounded-md ">
                                 <img src={file.url} className="object-top scale-100  "/>
 
-                                <motion.div
+                                <div
                                     className="absolute w-full h-full group-hover/item:flex  hidden  bg-black/70  top-0 "/>
                                 <div className=" group-hover/item:flex right-3 hidden gap-2 absolute top-4">
                                     <button onClick={()=>HandlePreviewCert(file.url)}><ExpandIcon size={18} color="white"/>
                                     </button>
                                     <button onClick={()=>handleDownload(file?.fileDownload,file?.description)}><DownloadIcon size={18} color={"white"}/></button>
                                 </div>
-                            </motion.div>
+                            </div>
                         )
                     })}
                 </div>

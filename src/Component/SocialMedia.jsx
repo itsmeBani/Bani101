@@ -3,13 +3,24 @@ import {SocialMediaLink} from "../ProjectData.js";
 
 function SocialMedia(props) {
     return (
-        <div className="flex gap-2 place-items-start justify-start  w-full">
+        <div className="flex flex-wrap gap-2 items-start justify-start w-full sm:justify-center md:justify-start">
             {SocialMediaLink?.map((link, index) => (
-                <a key={index} href={link.href} className="SocialMediaLinks">
-                    <img alt={link.alt} src={link.src} />
+                <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="SocialMediaLinks transition-transform transform hover:scale-110"
+                >
+                    <img
+                        alt={link.alt}
+                        src={link.src}
+                        className="w-6 h-6 sm:w-8 sm:h-8 md:w-6 md:h-6"
+                    />
                 </a>
             ))}
         </div>
+
     );
 }
 

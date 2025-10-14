@@ -16,7 +16,7 @@ function Contact() {
                     title={"Contact Me"}
                     description={"Get in touch with me for any inquiries or collaborations."}
                 />
-                <div className=" lg:px-[8rem] px-5 lg:pb-[3rem] w-full ">
+                <div className="  lg:pb-[3rem] w-full ">
 
                     <SocialMedia/>
 

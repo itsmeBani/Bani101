@@ -6,17 +6,25 @@ import Contact from "./Contact.jsx";
 import {Toaster} from "sonner";
 import Navbar from "../Component/Navbar.jsx";
 import {AnimatedBackground} from "../Component/AnimatedBackground.jsx";
+import Profile from "../Component/Profile.jsx";
+import ProfileOverview from "../Component/ProfileOverview.jsx";
 function Layout(props) {
     return (
-       <section className="flex flex-col h-full  overflow-hidden">
+       <section className="flex lg:flex-row flex-col  h-full lg:gap-10 p-8   overflow-hidden">
 
-           <Navbar/>
-           <Introduction/>
+           {/*<Navbar/>*/}
 
-           <Projects/>
-           <AboutMe/>
-           <Contact/>
-           <Toaster richColors />
+           <div>
+               <Profile/>
+           </div>
+
+        <div className="flex flex-col">
+            <ProfileOverview/>
+            <Projects/>
+            <AboutMe/>
+            <Contact/>
+            <Toaster richColors />
+        </div>
        </section>
     );
 }

@@ -22,13 +22,9 @@ function PhotoCollage(props) {
                 <div className="   grid gap-3 grid-cols-1 lg:grid-cols-3">
                {PhotoCollageData.map((url, index)=>{
                    return (
-                       <motion.div initial={{opacity:0, y:-10,}}
-                                   viewport={{ once: true }}
-                                   whileHover={{ scale: 1.3, zIndex:1111, transition: {type:"spring",duration:0.2 ,delay:0.1}}}
-                                   whileInView={{opacity:1, y:0,transition:{delay : index * 0.3, type: "spring",
-                                           visualDuration: 0.5, bounce: 0.25}}} key={index} className="w-full  overflow-hidden rounded-md h-[200px]">
+                       <div key={index} className="w-full  overflow-hidden rounded-md h-[200px]">
                            <img src={url} className="object-cover  h-full w-full grayscale hover:grayscale-0"/>
-                       </motion.div>
+                       </div>
                    )
                })}
            </div>
