@@ -1,9 +1,9 @@
 import React from 'react';
 import {SocialMediaLink} from "../ProjectData.js";
 
-function SocialMedia(props) {
+function SocialMedia() {
     return (
-        <div className="flex flex-wrap gap-2 items-start justify-start w-full justify-center">
+        <div className="flex flex-wrap gap-2 items-start justify-start w-full lg:justify-start justify-center">
             {SocialMediaLink?.map((link, index) => (
                 <a
                     key={index}

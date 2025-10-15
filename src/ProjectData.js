@@ -61,10 +61,10 @@ export const ProjectData = [
         Tech_Stack: [
             REACTICON, TYPESCRIPTLOGO, SHADCNUILOGO,SUPABASE,TANSTACKLOGO
         ],
-        Project_URL: "",
-        Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
+        Project_URL: "https://talkio-xd2v-a13mtwgwz-jiovani-a-fabros-projects.vercel.app/",
+        Github_Link: "https://github.com/itsmeBani/talkio",
         IsMobileApp: false,
-        MobileAppProjectLink:"https://github.com/itsmeBani/DYIPSPOT"
+
     },
     {
         id: 3,
