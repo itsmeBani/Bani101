@@ -19,7 +19,7 @@ function ProjectCard({info,onProjectClick}) {
                 </div>
             </div>
             <div className=" w-full">
-                <h1 className=" text-foreground-light text-[17px] font-bold capitalize">{Project_Name.toLowerCase()}</h1>
+                <h1 className=" text-foreground-light text-[17px] font-bold capitalize line-clamp-2 ">{Project_Name.toLowerCase()}</h1>
 
             </div>
             <div className="flex gap-2 ">
