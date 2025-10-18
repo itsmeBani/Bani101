@@ -9,9 +9,9 @@ function ProjectCard({info}) {
         Project_Name, Logo, Description, MobileAppProjectLink, Github_Link, Tech_Stack, Project_URL, IsMobileApp
     } = info
     return (<div style={{background: "hsl(0, 0%, 12.2%)"}}
-                 className="relative bg-[#1E1E1E] w-full h-full group border-[#2D2D2D] border-[1px] px-5 py-5 rounded-lg shadow-md">
+                 className="flex flex-col gap-3 bg-[#1E1E1E] justify-between w-full h-full group border-[#2D2D2D] border-[1px] px-5 py-5 rounded-lg shadow-md">
         <div className="flex gap-2   place-items-center justify-between">
-            <div className="flex place-items-center  ">
+            <div className="flex place-items-center relative ">
                 <div className="w-9 h-9 lg:w-12 lg:h-12 rounded-lg  relative">
                     <img src={Logo} alt={""}
                          className="object-contain w-full  img-no-bg rounded-lg overflow-hidden"/>
@@ -33,11 +33,13 @@ function ProjectCard({info}) {
             </div>
         </div>
 
-        <p className="text-white/80 text-sm lg:text-[17px] pt-2 font-light ">
-            {Description} </p>
+        <p className="text-white/80 text-sm lg:text-[17px]  font-light line-clamp-2 leading-6">
+            {Description}
+        </p>
 
 
-        <div className="pt-3  ">
+
+        <div className="  flex flex-col gap-3">
             <div className={"flex gap-1"}>
                 {Tech_Stack?.map((img, index) => {
                     return (<img key={index} src={img} alt="" className="w-7 h-7 "/>)
@@ -45,9 +47,22 @@ function ProjectCard({info}) {
 
             </div>
             <div className="flex w-full gap-2 justify-end relative">
-                <a href={Project_URL} target="_blank"
-                   rel="noopener noreferrer"
-                   className="text-white flex   bg-[#006239] btn-font px-3 rounded-md py-1">Take a look</a>
+                <button  className="text-white flex   btn-font px-3 rounded-md py-1">Description</button>
+                <a
+                    href={Project_URL ? Project_URL : "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`text-white flex btn-font px-3 rounded-md py-1 ${
+                        Project_URL
+                            ? "bg-[#006239] hover:bg-[#00522a] cursor-pointer"
+                            : "bg-[#006239]/50 cursor-not-allowed opacity-50"
+                    }`}
+                    onClick={(e) => {
+                        if (!Project_URL) e.preventDefault();
+                    }}
+                >
+                    Take a look
+                </a>
 
             </div>
         </div>

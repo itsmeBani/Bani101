@@ -38,7 +38,9 @@ import FASTAPILOGO from "./assets/FAST-API-LOGO.svg"
 import MUSICPLAYERLOGO from "./assets/MUSICPLAYERLOGO.png"
 import FRESHGROUPLOGO from "./assets/FRESHGROUPLOGO.svg"
 import  TANSTACKLOGO from "./assets/TANSTACKLOGO.png"
-import {MessageSquareMoreIcon} from "lucide-react"
+import VERCELLOGO from "./assets/vercel-svgrepo-com.svg"
+import VSCODELOGO from "./assets/vscode-svgrepo-com.svg"
+import WEBSTORMLOGO from "./assets/webstorm-svgrepo-com.svg"
 export const ProjectData = [
     {
         id: 1,
@@ -142,33 +144,66 @@ export const SocialMediaLink = [
 
 ];
 
-export const Technology = {
-    frontend: [
-        { logo: HTMLLOGO, name: "HTML" },
-        { logo: CSSLOGO, name: "CSS" },
-        { logo: JSLOGO, name: "JavaScript" },
-        { logo: TSLOGO, name: "TypeScript" },
-        { logo: REACTICON, name: "React" },
-        { logo: NATIVE, name: "React Native" },
-        { logo: TAILWINDLOGO, name: "Tailwind CSS" },
-        { logo: MATERIALTAILWINDLOGO, name: "Material Tailwind" },
-        { logo: SHADCNUILOGO, name: "shadcn/ui" },
-    ],
+export const Technology = [
+    {
+        id: "frontend",
+        title: "Frontend",
+        description:
+            "Technologies and frameworks I use to build user interfaces, interactive layouts, and responsive web experiences.",
+        items: [
+            { logo: HTMLLOGO, name: "HTML" },
+            { logo: CSSLOGO, name: "CSS" },
+            { logo: JSLOGO, name: "JavaScript" },
+            { logo: TSLOGO, name: "TypeScript" },
+        ],
+    },
+    {
+        id: "backend",
+        title: "Backend & Databases",
+        description:
+            "Backend technologies and database services I use to build reliable, secure, and scalable server-side applications.",
+        items: [
+            { logo: PHPLOGO, name: "PHP" },
+            { logo: SUPABASE, name: "Supabase" },
+            { logo: FIREBASELOGO, name: "Firebase" },
+        ],
+    },
+    {
+        id: "frameworks",
+        title: "Frameworks & Libraries",
+        description:
+            "Frameworks and libraries I use to create scalable, efficient, and interactive web and mobile applications.",
+        items: [
+            { logo: REACTICON, name: "React" },
+            { logo: NATIVE, name: "React Native" },
+            { logo: EXPOICON, name: "Expo" },
+            { logo: TANSTACKLOGO, name: "TanStack" },
+            { logo: TAILWINDLOGO, name: "Tailwind CSS" },
+            { logo: MATERIALTAILWINDLOGO, name: "Material Tailwind" },
+            { logo: SHADCNUILOGO, name: "shadcn/ui" },
+        ],
+    },
+    {
+        id: "developerTools",
+        title: "Developer Tools",
+        description:
+            "Tools I use for development, version control, debugging, and API testing to ensure efficient workflows.",
+        items: [
+            { logo: VSCODELOGO, name: "VS Code" },
+            { logo: GITHUBLOGO, name: "GitHub" },
+            { logo: WEBSTORMLOGO, name: "WebStorm" },
+            { logo: POSTMANLOGO, name: "Postman" },
+        ],
+    },
+    {
+        id: "designTools",
+        title: "Design Tools",
+        description:
+            "UI/UX design tools I use to create modern, responsive, and visually appealing designs.",
+        items: [{ logo: FIGMALOGO, name: "Figma" }],
+    },
+];
 
-    backend: [
-        { logo: PHPLOGO, name: "PHP" },
-        { logo: SUPABASE, name: "Supabase" },
-        { logo: FIREBASELOGO, name: "Firebase" },
-    ],
-
-    tools: [
-        { logo: EXPOICON, name: "Expo" },
-        { logo: TANSTACKLOGO, name: "TanStack" },
-        { logo: GITHUBLOGO, name: "GitHub" },
-        { logo: FIGMALOGO, name: "Figma" },
-        { logo: POSTMANLOGO, name: "Postman" },
-    ],
-};
 
 
 
