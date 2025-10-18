@@ -1,10 +1,10 @@
 import React from 'react';
 import GITHUBLOGO from "../assets/GITHUBLOGO.svg"
 import ANDROIDLOGO from "../assets/ANDROIDLOGO.svg"
-import {PhotoIcon} from "@heroicons/react/16/solid/index.js";
+
 import IsLive from "./isLive.js";
 
-function ProjectCard({info}) {
+function ProjectCard({info,onProjectClick}) {
     const {
         Project_Name, Logo, Description, MobileAppProjectLink, Github_Link, Tech_Stack, Project_URL, IsMobileApp
     } = info
@@ -47,7 +47,7 @@ function ProjectCard({info}) {
 
             </div>
             <div className="flex w-full gap-2 justify-end relative">
-                <button  className="text-white flex   btn-font px-3 rounded-md py-1">Description</button>
+                <button  onClick={onProjectClick} className="text-white flex   btn-font px-3 rounded-md py-1">Description</button>
                 <a
                     href={Project_URL ? Project_URL : "#"}
                     target="_blank"

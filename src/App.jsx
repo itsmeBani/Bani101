@@ -9,7 +9,7 @@ function App() {
 
 
     return (
-    <div className=" w-full flex place-items-center justify-center ">
+    <div className=" w-full      flex place-items-center justify-center ">
 
 
         <Layout/>

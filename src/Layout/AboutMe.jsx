@@ -20,7 +20,7 @@ function AboutMe() {
                 />
 
             </div>
-            <div className="grid grid-cols-1 z-50 md:grid-cols-2 w-full place-items-start gap-3 lg:gap-3 ">
+            <div className="grid grid-cols-1  md:grid-cols-2 w-full place-items-start gap-3 lg:gap-3 ">
 
 
 

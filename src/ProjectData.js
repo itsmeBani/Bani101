@@ -41,22 +41,33 @@ import  TANSTACKLOGO from "./assets/TANSTACKLOGO.png"
 import VERCELLOGO from "./assets/vercel-svgrepo-com.svg"
 import VSCODELOGO from "./assets/vscode-svgrepo-com.svg"
 import WEBSTORMLOGO from "./assets/webstorm-svgrepo-com.svg"
+import MAPBOX from "./assets/MAPBOX.svg"
 export const ProjectData = [
     {
         id: 1,
         Logo: DYIPSPOTLOGO,
         Project_Name: "DyipSpot",
         Description: "A real-time jeep tracking app that monitors both jeep and passenger locations",
-        Tech_Stack: [
-            REACTICON, EXPOICON, FIREBASELOGO
-        ],
+        Tech_Stack: [REACTICON, EXPOICON, FIREBASELOGO,MAPBOX],
         Project_URL: "",
         Github_Link: "https://github.com/itsmeBani/DYIPSPOT",
         IsMobileApp: true,
-        MobileAppProjectLink:"https://github.com/itsmeBani/DYIPSPOT"
+        MobileAppProjectLink: "https://github.com/itsmeBani/DYIPSPOT",
+        details: {
+            keyFeatures: [
+                "Built a real-time mobile application for tracking public jeeps using React Native, Expo, and Mapbox",
+                "Implemented live GPS tracking so passengers can view the jeep's location, route, and estimated arrival time on an interactive map",
+                "Enabled drivers to set custom routes and see nearby passengers based on real-time location data",
+                "Used Firebase Authentication with Google OAuth for secure login and role-based access (driver/passenger)",
+                "Implemented background location tracking for continuous updates even when the app is minimized",
+                "Ensured real-time synchronization of route, location, and passenger data between drivers and commuters",
+
+            ],
+            images: []
+        }
     },
     {
-        id: 1,
+        id: 10,
         Logo: VITE,
         Project_Name: "Talkio",
         Description: "A real-time messaging app that lets users connect, chat, and share updates instantly with friends",
@@ -66,72 +77,118 @@ export const ProjectData = [
         Project_URL: "https://talkio-xd2v-a13mtwgwz-jiovani-a-fabros-projects.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/talkio",
         IsMobileApp: false,
+        details: {
+            keyFeatures: [
+                "Developed a real-time chat application using Supabase Realtime for instant message delivery and synchronization.",
+                "Enabled users to send and receive files such as images and PDFs with secure Supabase Storage integration.",
+                "Implemented online presence tracking, typing indicators, and message read status for better engagement.",
+                "Designed a responsive and modern chat UI using React and Tailwind CSS for seamless user interaction.",
+                "Ensured data privacy and authentication through Supabase Auth, providing secure user sessions.",
+                "Optimized real-time event handling to maintain consistent performance across devices and networks.",
+            ],
 
+            images: []
+        }
+    },
+    {
+        id: 2,
+        Logo: VITE,
+        Project_Name: "4Ps Monitoring System",
+        Description: "A web application to track the educational status of 4Ps beneficiaries",
+        Tech_Stack: [REACTICON, TYPESCRIPTLOGO, SUPABASE, SHADCNUILOGO, TANSTACKLOGO],
+        Project_URL: "https://4ps-monitoring.vercel.app/",
+        Github_Link: "https://github.com/itsmeBani/PudocWestChildrenMonitoring",
+        IsMobileApp: false,
+        details: {
+            keyFeatures: [
+                "Built a web application to track the educational status of 4Ps (Pantawid Pamilyang Pilipino Program) beneficiaries, categorizing students as undergraduate, graduated, or stopped",
+                "Implemented PDF export functionality for student records",
+                "Used Supabase for storing and managing student records, enabling real-time data updates and retrieval",
+                "Implemented secure login with Supabase Auth",
+                "Designed a clean UI using Shadcn UI and TanStack Table for efficient filtering, sorting, and tracking of student statuses",
+
+            ],
+            images: []
+        }
     },
     {
         id: 3,
         Logo: VITE,
-        Project_Name: "Pudoc West Nutrition Monitoring",
-        Description: "An app designed to help monitor and manage the nutrition status of individuals in Pudoc West",
-        Tech_Stack: [
-            REACTICON, FIREBASELOGO, TAILWINDLOGO, SUPABASE
-        ],
+        Project_Name: "Pudoc West Children Monitoring",
+        Description: "A web-based application to track and monitor the nutritional status of children in Pudoc West",
+        Tech_Stack: [REACTICON, FIREBASELOGO, TAILWINDLOGO, SUPABASE,MAPBOX],
         Project_URL: "https://pudoc-west-children-monitoring.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/PudocWestChildrenMonitoring",
         IsMobileApp: false,
+        details: {
+            keyFeatures: [
+                "Built a web-based application to track and monitor the nutritional status of children in Pudoc West using ReactJS and Firebase Firestore",
+                "Automatically determines the health status of each child (underweight, normal, or overweight) based on inputted height and weight",
+                "Used Firebase Firestore to securely store and manage health records with real-time updates",
+                "Integrated Google OAuth via Firebase Authentication for secure and simplified login",
+            ],
+            images: []
+        }
     },
     {
         id: 4,
-        Logo: VITE,
-        Project_Name: "4ps Monitoring",
-        Description: "An app designed to help monitor and manage the 4ps member",
-        Tech_Stack: [
-            REACTICON, TYPESCRIPTLOGO, TAILWINDLOGO, SUPABASE, SHADCNUILOGO
-        ],
-        Project_URL: "https://4ps-monitoring.vercel.app/",
-        Github_Link: "https://github.com/itsmeBani/PudocWestChildrenMonitoring",
-        IsMobileApp: false,
-    },
-    {
-        id: 7,
         Logo: MUSICPLAYERLOGO,
         Project_Name: "Music-Player",
-        Description: "A music player for Android and Web, integrated with the Spotify API for browsing and streaming.",
-        Tech_Stack: [
-            REACTICON, EXPOICON,SUPABASE,SHADCNUILOGO
-        ],
+        Description: "A music player for Android and Web, integrated with the Spotify API for browsing and streaming",
+        Tech_Stack: [REACTICON, EXPOICON, SUPABASE, SHADCNUILOGO],
         Project_URL: "https://music-player-web-sigma.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/music-player-web",
         IsMobileApp: true,
-        MobileAppProjectLink:"https://github.com/itsmeBani/music-player-react-native"
+        MobileAppProjectLink: "https://github.com/itsmeBani/music-player-react-native",
+        details: {
+            keyFeatures: [
+                "Browse and stream Spotify music",
+                "Android and Web support",
+                "Playlist management and favorites",
+                "User authentication and secure login"
+            ],
+            images: []
+        }
     },
-
     {
-        id: 6,
+        id: 5,
         Logo: FRESHGROUPLOGO,
         Project_Name: "FreshGroup",
-        Description: "A website clusters first-year students using unsupervised learning to help schools personalize support and boost outcomes.",
-        Tech_Stack: [
-            REACTICON,TYPESCRIPTLOGO, TAILWINDLOGO,SUPABASE,SHADCNUILOGO,FASTAPILOGO
-        ],
+        Description: "A website that clusters first-year students using unsupervised learning to help schools personalize support and boost outcomes",
+        Tech_Stack: [REACTICON, TYPESCRIPTLOGO, TAILWINDLOGO, SUPABASE, SHADCNUILOGO, FASTAPILOGO],
         Project_URL: "https://freshgroup.vercel.app/login",
         Github_Link: "https://github.com/itsmeBani/FRESHGROUP",
         IsMobileApp: false,
+        details: {
+            keyFeatures: [
+                "Student clustering using unsupervised learning",
+                "Personalized support suggestions",
+                "Admin dashboard with data visualization",
+                "Real-time updates and analytics"
+            ],
+            images: []
+        }
     },
     {
-        id: 2,
+        id: 6,
         Logo: SAMSANGTECHLOGO,
         Project_Name: "SAMSANG TECH",
-        Description: "A simple app where users can browse and buy gadgets easily ",
-        Tech_Stack: [
-            REACTICON, PHPLOGO, TAILWINDLOGO
-        ],
+        Description: "A simple app where users can browse and buy gadgets easily",
+        Tech_Stack: [REACTICON, PHPLOGO, TAILWINDLOGO],
         Project_URL: "https://shop-ruddy-eta.vercel.app/",
         Github_Link: "https://github.com/itsmeBani/shop",
         IsMobileApp: false,
-    },
-   
-]
+        details: {
+            keyFeatures: [
+                "Browse gadgets and products",
+                "Easy online purchase",
+                "User-friendly interface",
+                "Product filtering and sorting"
+            ],
+            images: []
+        }
+    }
+];
 
 
 export const SocialMediaLink = [

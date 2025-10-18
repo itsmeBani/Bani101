@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root:has(.no-doc-scroll){
+    overflow: hidden;
+}
 
 
 
