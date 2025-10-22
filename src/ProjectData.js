@@ -150,6 +150,26 @@ export const ProjectData = [
             images: []
         }
     },
+    ,
+    {
+        id: 16,
+        Logo: VITE,
+        Project_Name: "Real Estate",
+        Description: "A modern real estate web application created as part of a job application project, allowing users to explore, search, and view property listings with detailed information and responsive design.",
+        Tech_Stack: [REACTICON, SHADCNUILOGO, TAILWINDLOGO],
+        Project_URL: "https://real-state-six-kappa.vercel.app/",
+        Github_Link: "https://github.com/itsmeBani/real-state",
+        IsMobileApp: false,
+        details: {
+            keyFeatures: [
+                "Browse and search real estate listings",
+                "Responsive and modern UI built with Tailwind and Shadcn UI",
+                "Property detail pages with images and information",
+                "Optimized for performance and accessibility"
+            ],
+            images: []
+        }
+    },
     {
         id: 5,
         Logo: FRESHGROUPLOGO,
@@ -188,6 +208,7 @@ export const ProjectData = [
             images: []
         }
     }
+
 ];
 
 
